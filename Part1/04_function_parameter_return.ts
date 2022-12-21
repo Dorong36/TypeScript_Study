@@ -21,7 +21,7 @@ function paramUndef(x?:number):number{ // 파라미터에 ?붙이기 => 들어�
 }
 paramUndef();
 paramUndef(123);
-// 🌟 이는 결국 (x : number | undefined)와 같은 의미!! 🌟
+// 🌟 (x?:number)는 결국 (x : number | undefined)와 같은 의미!! 🌟
 
 
 // 간단한 퀴즈
