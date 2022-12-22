@@ -67,7 +67,7 @@ console.log(quiz5_1fun([1,2,'3',4,'5']))
 
 
 // Q2
-function quiz5_2fun(teacher:{subject : string | string[]}):string{
+function quiz5_2fun(teacher:{subject : string | string[]}):string|undefined{ // return에 undefined 추가하라는 오류문 뜸 => 09 수업 과정에서 tsconfig 건드려서 그럼
     if(typeof teacher.subject === 'string'){
         return teacher.subject;
     }else if(Array.isArray(teacher.subject)){
