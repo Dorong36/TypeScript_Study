@@ -13,7 +13,7 @@ var name1 = 'Kim';
     => but 정말 신버전 문법들(bigint 타입 등)은 esnext로 버전 올려줘야함
 
 - 추가로 넣을만한 것들
-    - "noImplicitAny": true
+    -  "noImplicitAny": true
         => any라는 타입이 의도치않게 발생할 경우 에러 띄워주는 여부
     - "strictNullChecks": true
         => null, undefined 타입에 이상한 조작을 가하면 에러 띄워주는 여부

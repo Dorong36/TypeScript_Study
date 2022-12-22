@@ -18,7 +18,7 @@ function paramUndef(x) {
 }
 paramUndef();
 paramUndef(123);
-// 🌟 이는 결국 (x : number | undefined)와 같은 의미!! 🌟
+// 🌟 (x?:number)는 결국 (x : number | undefined)와 같은 의미!! 🌟
 // 간단한 퀴즈
 function quiz4_0fun(x) {
     // console.log(x + 3); // 오류가 나는 이유는?
