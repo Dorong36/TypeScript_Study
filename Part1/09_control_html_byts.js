@@ -43,3 +43,15 @@ var button09 = document.querySelector('#btn');
 button09 === null || button09 === void 0 ? void 0 : button09.addEventListener('click', function () {
     alert('Hi!!!');
 });
+// Q1
+var img09 = document.querySelector('#img');
+if (img09 instanceof HTMLImageElement) {
+    img09.src = 'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-10th-gen-finish-unselect-gallery-1-202212?wid=2560&hei=1440&fmt=p-jpg&qlt=95&.v=1667592106064';
+}
+// Q2
+var link09_1 = document.querySelectorAll('.naver');
+link09_1.forEach(function (a) {
+    if (a instanceof HTMLAnchorElement) {
+        a.href = 'https://google.com';
+    }
+});

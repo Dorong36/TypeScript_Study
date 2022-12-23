@@ -11,7 +11,7 @@ animal06 = 'hi';
 type Animal1 = {name : string, age : number};
 let animal06_1:Animal1 = {name : 'coco', age : 10}
 
-// type alias는 구분을 위해 🌟첫 글자를 대문자🌟로 시작하는게 일반적!!
+// type alias는 구분을 위해 🌟 첫 글자를 대문자🌟로 시작하는게 일반적!!
 
 
 // 잠시 const 설명
