@@ -3,7 +3,7 @@
 // ✅ Type alias에 함수 type 저장해서 쓰기
 // 🔸 1. 함수 타입은 꼭 화살표함수 사용!!
 type Funtype08 = (a : string) => number;
-// 무조건 string 파라미터, number 파라미터
+// 무조건 string 파라미터, number 리턴
 // 화살표함수에서 실행문 부분이 return문 하나면 {}와 return 키워드 생략 가능과 비슷한 느낌
 
 // 🔸 2. 함수 표현식에만 type alias 사용가능
@@ -109,3 +109,9 @@ let quiz08_3 = (str, fun1, fun2) => {
     return fun2(fun1(str));
 }
 console.log(quiz08_3('010-1111-2222', cutZero, removeDash))
+
+
+
+let data : number  = 123
+console.log(typeof data)
+console.log(typeof (typeof data))

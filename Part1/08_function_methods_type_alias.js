@@ -1,4 +1,4 @@
-// 무조건 string 파라미터, number 파라미터
+// 무조건 string 파라미터, number 리턴
 // 화살표함수에서 실행문 부분이 return문 하나면 {}와 return 키워드 생략 가능과 비슷한 느낌
 // 🔸 2. 함수 표현식에만 type alias 사용가능
 var fun08 = function (a) {
@@ -77,3 +77,6 @@ var quiz08_3 = function (str, fun1, fun2) {
     return fun2(fun1(str));
 };
 console.log(quiz08_3('010-1111-2222', cutZero, removeDash));
+var data = 123;
+console.log(typeof data);
+console.log(typeof (typeof data));
