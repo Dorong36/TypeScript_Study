@@ -9,6 +9,11 @@ var teacher11 = { name: 'Kim', age: 30 };
 ;
 ;
 ;
-// type Animal11_1 = {age : number}; => 오류!!!
-// 여기서 드러나는 interface의 장점
-// 외부 라이브러리 경우 interface사용이 많음 => 속성 추가 등 커스터마이징이 유용!!
+;
+var shoppingList = [{ product: 'mouse', price: 79000 }, { product: 'keyboard', price: 139000 }];
+var plusMinus = {
+    // interface에서 지정했으니까 여기서 파라미터나 리턴타입에 타입을 지정할 필요는 없음
+    plus: function (a, b) { return a + b; },
+    minus: function (a, b) { return a - b; },
+};
+// plusMinus.plus(1,'4');  interface로 타입지정, 그 외의 타입 들어오면 당연히 오류

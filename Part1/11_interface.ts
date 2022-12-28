@@ -52,4 +52,26 @@ type Animal11_1 = {name : string};
 
 
 
+// Q1
+interface Product11_1 {brand : string, serialNumber : number, model : string[]}
 
+// Q2
+interface Product11_2 {product : string, price : number};
+let shoppingList : Product11_2[] = [{product : 'mouse', price : 79000}, {product : 'keyboard', price : 139000}]
+
+// Q3
+interface Product11_3 extends Product11_2 {
+    card : boolean
+}
+
+// Q4
+interface Quest11_4 {
+    plus : (a:number, b : number) => number,
+    minus : (a:number, b : number) => number
+}
+let plusMinus : Quest11_4 = {
+    // interface에서 지정했으니까 여기서 파라미터나 리턴타입에 타입을 지정할 필요는 없음
+    plus : (a,b) => {return a+b;}, 
+    minus : (a,b) => {return a-b;},
+}
+// plusMinus.plus(1,'4');  interface로 타입지정, 그 외의 타입 들어오면 당연히 오류
