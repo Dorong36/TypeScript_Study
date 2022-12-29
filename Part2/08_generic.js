@@ -87,5 +87,9 @@ var RanName = /** @class */ (function () {
     }
     return RanName;
 }());
-var ranName = new RanName('yu');
-var result = ranName.name;
+var ranName1 = new RanName('yu');
+var result1 = ranName1.name;
+var ranName2 = new RanName(123);
+var result2 = ranName2.name;
+var ranName3 = new RanName(['a', 'b', 'c']);
+var result3 = ranName3.name;

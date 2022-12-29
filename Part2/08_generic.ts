@@ -110,11 +110,13 @@ JSON.parse() 소괄호 안에 JSON자료를 넣으면 그 자리에 따옴표가
 
 // Q3
 class RanName <Type>{
-    name : <Type>;
-    constructor(name : <Type>){
-        this.name = name
+    constructor(public name : Type){
     }
 }
-let ranName = new RanName<string>('yu');
-let result = ranName.name;
+let ranName1 = new RanName<string>('yu');
+let result1 = ranName1.name;
+let ranName2 = new RanName<number>(123);
+let result2 = ranName2.name;
+let ranName3 = new RanName<string[]>(['a', 'b', 'c']);
+let result3 = ranName3.name;
 
